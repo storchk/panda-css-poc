@@ -1,6 +1,7 @@
 import "../src/styles/globals.css";
+import { withThemeByClassName } from "@storybook/addon-themes";
 
-import type { Preview } from "@storybook/react-webpack5";
+import type { Preview, ReactRenderer } from "@storybook/react-webpack5";
 
 const preview: Preview = {
   parameters: {
@@ -11,6 +12,15 @@ const preview: Preview = {
       },
     },
   },
+  decorators: [
+    withThemeByClassName<ReactRenderer>({
+      themes: {
+        light: "",
+        dark: "dark",
+      },
+      defaultTheme: "light",
+    }),
+  ],
   tags: ["autodocs"],
 };
 

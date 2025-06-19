@@ -10,8 +10,5 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Example = {
-  args: {
-    primary: true,
-    label: "Button",
-  },
+  args: {},
 } satisfies Story;

@@ -22,6 +22,7 @@
   "devDependencies": {
     "@pandacss/dev": "^0.54.0",
     "@storybook/addon-docs": "^9.0.12",
+    "@storybook/addon-themes": "^9.0.12",
     "@storybook/addon-webpack5-compiler-swc": "^3.0.0",
     "@storybook/react-webpack5": "^9.0.12",
     "@types/react": "^19.1.8",
