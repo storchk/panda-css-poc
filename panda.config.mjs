@@ -9,6 +9,10 @@ export default defineConfig({
 
   // Files to exclude
   exclude: [],
+
+  // Minimal setup: https://panda-css.com/docs/guides/minimal-setup
+  presets: [],
+
   conditions: {
     light: "[data-color-mode=light] &",
     dark: "[data-color-mode=dark] &",
