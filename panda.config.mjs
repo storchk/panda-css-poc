@@ -12,6 +12,12 @@ export default defineConfig({
 
   // Minimal setup: https://panda-css.com/docs/guides/minimal-setup
   presets: [],
+  eject: true,
+  utilities: {
+    color: {
+      values: "colors",
+    },
+  },
 
   conditions: {
     light: "[data-color-mode=light] &",
@@ -87,6 +93,10 @@ export default defineConfig({
                 base: "{colors.theme1.light.brand}",
                 _dark: "{colors.theme1.dark.brand}",
               },
+              _theme2: {
+                base: "{colors.theme2.light.brand}",
+                _dark: "{colors.theme2.dark.brand}",
+              },
             },
           },
           text: {
@@ -95,10 +105,10 @@ export default defineConfig({
                 base: "{colors.theme1.light.grey3}",
                 _dark: "{colors.theme1.dark.grey3}",
               },
-            },
-            _theme2: {
-              base: "{colors.theme2.light.grey3}",
-              _dark: "{colors.theme2.dark.grey3}",
+              _theme2: {
+                base: "{colors.theme2.light.grey3}",
+                _dark: "{colors.theme2.dark.grey3}",
+              },
             },
           },
         },
