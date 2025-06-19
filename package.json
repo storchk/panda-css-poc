@@ -1,0 +1,33 @@
+{
+  "name": "panda-css-poc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prepare": "panda codegen",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/storchk/panda-css-poc.git"
+  },
+  "author": "Kevin Storch",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/storchk/panda-css-poc/issues"
+  },
+  "homepage": "https://github.com/storchk/panda-css-poc#readme",
+  "devDependencies": {
+    "@pandacss/dev": "^0.54.0",
+    "@storybook/addon-docs": "^9.0.12",
+    "@storybook/addon-webpack5-compiler-swc": "^3.0.0",
+    "@storybook/react-webpack5": "^9.0.12",
+    "@types/react": "^19.1.8",
+    "storybook": "^9.0.12"
+  },
+  "dependencies": {
+    "react": "^19.1.0"
+  }
+}
