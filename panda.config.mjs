@@ -7,6 +7,8 @@ import {
   themeExtend,
 } from "./src/styles/themes";
 
+const isProduction = process.env.NODE_ENV === "production";
+
 export default defineConfig({
   preflight: true,
   include: ["./src/**/*.{js,jsx,ts,tsx}"],
@@ -18,6 +20,8 @@ export default defineConfig({
   strictTokens: true,
   jsxFramework: "react",
   presets: [],
+
+  minify: isProduction,
 
   // Define the global tokens
   theme: {
