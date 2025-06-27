@@ -1,10 +1,9 @@
 import "../styled-system/styles.css";
-
 import type { Preview } from "@storybook/react-webpack5";
 
 const preview: Preview = {
   initialGlobals: {
-    theme: "theme1",
+    theme: "redTheme",
     mode: "light",
   },
   globalTypes: {
@@ -29,15 +28,15 @@ const preview: Preview = {
     theme: {
       name: "Theme",
       description: "Global theme for components",
-      defaultValue: "pinkTheme",
+      defaultValue: "redTheme",
       toolbar: {
         // The icon for the toolbar item
-        title: "Pink",
+        title: "Chiefs",
         icon: "paintbrush",
         // Array of options
         items: [
-          { value: "pinkTheme", title: "Pink" },
-          { value: "blueTheme", title: "Blue" },
+          { value: "redTheme", title: "Chiefs" },
+          { value: "blueTheme", title: "Seahawks" },
         ],
         // Property that specifies if the name of the item will be displayed
         showName: true,
@@ -62,6 +61,9 @@ const preview: Preview = {
     },
   ],
   tags: ["autodocs"],
+  parameters: {
+    layout: "fullscreen",
+  },
 };
 
 export default preview;

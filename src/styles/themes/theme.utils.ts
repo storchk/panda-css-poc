@@ -12,6 +12,24 @@ export const defineTheme = defineThemeContract({
           _dark: "",
         },
       },
+      primary: {
+        value: {
+          base: "",
+          _dark: "",
+        },
+      },
+      secondary: {
+        value: {
+          base: "",
+          _dark: "",
+        },
+      },
+      tertiary: {
+        value: {
+          base: "",
+          _dark: "",
+        },
+      },
     },
   },
 });

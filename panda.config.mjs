@@ -1,7 +1,7 @@
 import { defineConfig } from "@pandacss/dev";
 import {
   blueTheme,
-  pinkTheme,
+  redTheme,
   tokens,
   semanticTokens,
   themeExtend,
@@ -27,16 +27,25 @@ export default defineConfig({
   },
 
   // Define the theme variants
-  themes: { blueTheme, pinkTheme },
+  themes: { blueTheme, redTheme },
 
   conditions: {
     light: "[data-color-mode=light] &",
     dark: "[data-color-mode=dark] &",
-    pinkTheme: "[data-panda-theme=pinkTheme] &",
+    redTheme: "[data-panda-theme=redTheme] &",
     blueTheme: "[data-panda-theme=blueTheme] &",
   },
 
   staticCss: {
-    themes: ["pinkTheme", "blueTheme"],
+    themes: ["redTheme", "blueTheme"],
+  },
+
+  globalCss: {
+    extend: {
+      body: {
+        backgroundColor: "bg",
+        padding: "md",
+      },
+    },
   },
 });

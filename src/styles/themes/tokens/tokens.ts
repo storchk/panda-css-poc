@@ -4,14 +4,25 @@ const defaultSpacingRelative = 0.25; // in rem
 
 export const tokens = defineTokens({
   colors: {
-    theme1Brand: { value: "blue" },
-    theme2Brand: { value: "pink" },
+    brand: {
+      primary: { value: "#69BE28" },
+      secondary: { value: "#002244" },
+      accent: { value: "#A5ACAF" },
+    },
+
+    white: { value: "#FFFFFF" },
+    black: { value: "#000000" },
     grey: {
       50: { value: "#f9fafb" },
+      100: { value: "#f3f4f6" },
+      200: { value: "#e5e7eb" },
+      300: { value: "#d1d5db" },
+      400: { value: "#9ca3af" },
+      500: { value: "#6b7280" },
+      600: { value: "#4b5563" },
+      700: { value: "#374151" },
+      800: { value: "#1f2937" },
       900: { value: "#111827" },
-    },
-    secondary: {
-      value: "#00c9a7",
     },
   },
   spacing: {
@@ -31,5 +42,24 @@ export const tokens = defineTokens({
 });
 
 export const semanticTokens = defineTokens({
-  colors: {},
+  colors: {
+    primary: {
+      value: {
+        base: "{colors.brand.primary}",
+        _dark: "{colors.brand.primary}",
+      },
+    },
+    secondary: {
+      value: {
+        base: "{colors.brand.secondary}",
+        _dark: "{colors.brand.secondary}",
+      },
+    },
+    tertiary: {
+      value: {
+        base: "{colors.grey.500}",
+        _dark: "{colors.grey.700}",
+      },
+    },
+  },
 });
