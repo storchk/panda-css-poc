@@ -6,10 +6,11 @@ export const Button: FC<ButtonProps> = ({
   label,
   variant = "primary",
   size = "medium",
+  onClick,
 }) => {
   return (
     <>
-      <StyledButton variant={variant} size={size}>
+      <StyledButton variant={variant} size={size} onClick={onClick}>
         {label}
       </StyledButton>
     </>

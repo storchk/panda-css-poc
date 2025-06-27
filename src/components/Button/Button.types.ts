@@ -1,5 +1,5 @@
 export type ButtonProps = {
   variant?: "primary" | "secondary" | "tertiary";
-  size?: "small" | "medium" | "large";
+  size?: "extraSmall" | "small" | "medium" | "large";
   label: string;
-};
+} & React.ButtonHTMLAttributes<HTMLButtonElement>;

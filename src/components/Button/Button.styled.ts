@@ -1,30 +1,42 @@
 import { styled } from "../../../styled-system/jsx";
+import { ButtonProps } from "./Button.types";
 
 export const StyledButton = styled("button", {
+  base: {
+    borderWidth: "0.125rem",
+    borderStyle: "solid",
+    fontSize: "md",
+    _hover: {
+      cursor: "pointer",
+    },
+    borderRadius: "0.75rem",
+  },
   variants: {
     variant: {
       primary: {
         backgroundColor: "primary",
-        color: "white",
         borderColor: "primary",
-        borderWidth: "0.125rem",
-        borderStyle: "solid",
+
+        color: "white",
 
         _hover: {
           backgroundColor: "secondary",
+          borderColor: "secondary",
         },
       },
       secondary: {
         backgroundColor: "secondary",
+        borderColor: "secondary",
+
         color: "white",
         _hover: {
           backgroundColor: "primary",
+          borderColor: "primary",
         },
       },
       tertiary: {
         backgroundColor: "grey.800",
         color: "grey.200",
-        border: "0.125rem solid",
         borderColor: "grey.800",
         _hover: {
           backgroundColor: "transparent",
@@ -34,6 +46,10 @@ export const StyledButton = styled("button", {
       },
     },
     size: {
+      extraSmall: {
+        paddingBlock: "xxs",
+        paddingInline: "sm",
+      },
       small: {
         paddingBlock: "xs",
         paddingInline: "sm",
