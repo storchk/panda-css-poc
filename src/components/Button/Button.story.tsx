@@ -10,5 +10,9 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Example = {
-  args: {},
+  args: {
+    label: "Click Me",
+    variant: "primary",
+    size: "medium",
+  },
 } satisfies Story;
