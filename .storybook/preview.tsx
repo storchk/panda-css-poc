@@ -29,15 +29,15 @@ const preview: Preview = {
     theme: {
       name: "Theme",
       description: "Global theme for components",
-      defaultValue: "theme1",
+      defaultValue: "pinkTheme",
       toolbar: {
         // The icon for the toolbar item
-        title: "Theme",
+        title: "Pink",
         icon: "paintbrush",
         // Array of options
         items: [
-          { value: "theme1", title: "Theme 1" },
-          { value: "theme2", title: "Theme 2" },
+          { value: "pinkTheme", title: "Pink" },
+          { value: "blueTheme", title: "Blue" },
         ],
         // Property that specifies if the name of the item will be displayed
         showName: true,
@@ -49,13 +49,13 @@ const preview: Preview = {
     (Story, ctx) => {
       if (typeof document !== "undefined") {
         document.documentElement.setAttribute(
-          "data-theme",
-          ctx.globals.theme || "theme1"
+          "data-panda-theme",
+          ctx.globals.theme
         );
 
         document.documentElement.setAttribute(
           "data-color-mode",
-          ctx.globals.mode || "light"
+          ctx.globals.mode
         );
       }
       return <Story />;

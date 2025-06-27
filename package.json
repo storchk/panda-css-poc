@@ -21,6 +21,7 @@
   "homepage": "https://github.com/storchk/panda-css-poc#readme",
   "devDependencies": {
     "@pandacss/dev": "^0.54.0",
+    "@pandacss/types": "^0.54.0",
     "@storybook/addon-docs": "^9.0.12",
     "@storybook/addon-themes": "^9.0.12",
     "@storybook/addon-webpack5-compiler-swc": "^3.0.0",
