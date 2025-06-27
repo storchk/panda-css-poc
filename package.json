@@ -6,8 +6,9 @@
   "scripts": {
     "prepare": "panda codegen",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "storybook": "pnpm prepare && storybook dev -p 6006",
-    "build-storybook": "npx panda build && storybook build"
+    "storybook": "storybook dev -p 6006",
+    "build:panda": "pnpm panda build",
+    "build-storybook": "pnpm build:panda && storybook build"
   },
   "repository": {
     "type": "git",
