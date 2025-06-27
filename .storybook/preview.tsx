@@ -61,9 +61,6 @@ const preview: Preview = {
     },
   ],
   tags: ["autodocs"],
-  parameters: {
-    layout: "fullscreen",
-  },
 };
 
 export default preview;

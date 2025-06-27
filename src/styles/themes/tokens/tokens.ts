@@ -9,7 +9,7 @@ export const tokens = defineTokens({
       secondary: { value: "#002244" },
       accent: { value: "#A5ACAF" },
     },
-
+    transparent: { value: "transparent" },
     white: { value: "#FFFFFF" },
     black: { value: "#000000" },
     grey: {
