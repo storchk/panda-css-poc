@@ -4,7 +4,7 @@ import {
   redTheme,
   tokens,
   semanticTokens,
-  themeExtend,
+  breakpoints,
 } from "./src/styles/themes";
 
 const isProduction = process.env.NODE_ENV === "production";
@@ -25,7 +25,9 @@ export default defineConfig({
 
   // Define the global tokens
   theme: {
-    extend: themeExtend,
+    extend: {
+      breakpoints,
+    },
     tokens,
     semanticTokens,
   },
