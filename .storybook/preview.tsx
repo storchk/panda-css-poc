@@ -49,12 +49,12 @@ const preview: Preview = {
       if (typeof document !== "undefined") {
         document.documentElement.setAttribute(
           "data-panda-theme",
-          ctx.globals.theme
+          ctx.globals.theme,
         );
 
         document.documentElement.setAttribute(
           "data-color-mode",
-          ctx.globals.mode
+          ctx.globals.mode,
         );
       }
       return <Story />;
