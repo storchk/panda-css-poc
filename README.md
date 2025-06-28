@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7d836e3e-c4fa-460d-8559-f056f122332e/deploy-status)](https://app.netlify.com/projects/beamish-mermaid-bc400e/deploys)
+
 # 🐼 Panda CSS - Proof of Concept
 
 This repository demonstrates a **Proof of Concept (PoC)** for integrating **🐼 Panda CSS** with **Storybook** in a React project. The PoC showcases:
