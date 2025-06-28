@@ -6,6 +6,7 @@
   "scripts": {
     "prepare": "panda codegen",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ./src",
     "storybook": "storybook dev -p 6006",
     "build:panda": "pnpm panda",
     "build-storybook": "pnpm build:panda && storybook build"
@@ -21,7 +22,10 @@
   },
   "homepage": "https://github.com/storchk/panda-css-poc#readme",
   "devDependencies": {
+    "@eslint/js": "^9.30.0",
+    "@eslint/markdown": "^6.6.0",
     "@pandacss/dev": "^0.54.0",
+    "@pandacss/eslint-plugin": "^0.2.12",
     "@pandacss/types": "^0.54.0",
     "@storybook/addon-actions": "^9.0.8",
     "@storybook/addon-docs": "^9.0.12",
@@ -29,7 +33,11 @@
     "@storybook/addon-webpack5-compiler-swc": "^3.0.0",
     "@storybook/react-webpack5": "^9.0.12",
     "@types/react": "^19.1.8",
-    "storybook": "^9.0.12"
+    "eslint": "^9.30.0",
+    "eslint-plugin-react": "^7.37.5",
+    "globals": "^16.2.0",
+    "storybook": "^9.0.12",
+    "typescript-eslint": "^8.35.0"
   },
   "dependencies": {
     "react": "^19.1.0"

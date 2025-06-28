@@ -1,3 +1,5 @@
+/* eslint-disable @pandacss/no-config-function-in-source */
+
 import { defineTokens } from "@pandacss/dev";
 import type { Tokens, SemanticTokens } from "@pandacss/types";
 import { colors } from "./colors";

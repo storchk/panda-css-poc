@@ -1,5 +1,4 @@
 import { styled } from "../../../styled-system/jsx";
-import { ButtonProps } from "./Button.types";
 
 export const StyledButton = styled("button", {
   base: {
