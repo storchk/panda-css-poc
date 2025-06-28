@@ -1,11 +1,5 @@
 import { defineConfig } from "@pandacss/dev";
-import {
-  blueTheme,
-  redTheme,
-  tokens,
-  semanticTokens,
-  breakpoints,
-} from "./src/styles/themes";
+import { blueTheme, redTheme, preset } from "./src/styles/themes";
 
 const isProduction = process.env.NODE_ENV === "production";
 
@@ -19,18 +13,9 @@ export default defineConfig({
   strictPropertyValues: true,
   strictTokens: true,
   jsxFramework: "react",
-  presets: [],
+  presets: [preset],
 
   minify: isProduction,
-
-  // Define the global tokens
-  theme: {
-    extend: {
-      breakpoints,
-    },
-    tokens,
-    semanticTokens,
-  },
 
   // Define the theme variants
   themes: { blueTheme, redTheme },
