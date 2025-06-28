@@ -1,6 +1,6 @@
 /* eslint-disable @pandacss/no-config-function-in-source */
 
-import { defineTokens } from "@pandacss/dev";
+import { defineTokens, defineSemanticTokens } from "@pandacss/dev";
 import type { Tokens, SemanticTokens } from "@pandacss/types";
 import { colors } from "./colors";
 import { spacing } from "./spacing";
@@ -12,7 +12,7 @@ export const tokens: Tokens = defineTokens({
   fontSizes,
 });
 
-export const semanticTokens: SemanticTokens = defineTokens({
+export const semanticTokens: SemanticTokens = defineSemanticTokens({
   colors: {
     primary: {
       value: {
