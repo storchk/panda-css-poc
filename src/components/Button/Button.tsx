@@ -7,9 +7,15 @@ export const Button: FC<ButtonProps> = ({
   variant = "primary",
   size = "medium",
   onClick,
+  className,
 }) => {
   return (
-    <StyledButton variant={variant} size={size} onClick={onClick}>
+    <StyledButton
+      variant={variant}
+      size={size}
+      onClick={onClick}
+      className={className}
+    >
       {label}
     </StyledButton>
   );
