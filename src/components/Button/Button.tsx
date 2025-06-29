@@ -9,10 +9,8 @@ export const Button: FC<ButtonProps> = ({
   onClick,
 }) => {
   return (
-    <>
-      <StyledButton variant={variant} size={size} onClick={onClick}>
-        {label}
-      </StyledButton>
-    </>
+    <StyledButton variant={variant} size={size} onClick={onClick}>
+      {label}
+    </StyledButton>
   );
 };
