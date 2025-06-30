@@ -26,6 +26,7 @@
     "@eslint/markdown": "^6.6.0",
     "@pandacss/dev": "^0.54.0",
     "@pandacss/eslint-plugin": "^0.2.12",
+    "@pandacss/studio": "^0.54.0",
     "@pandacss/types": "^0.54.0",
     "@storybook/addon-actions": "^9.0.8",
     "@storybook/addon-docs": "^9.0.12",

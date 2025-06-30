@@ -47,7 +47,23 @@ To get started with this PoC, follow these steps:
 4. **Explore the components**:
    Open your browser and navigate to the Storybook URL provided in the terminal to explore the components styled with 🐼 Panda CSS.
 
+## 🐼 Panda CSS Studio
+
+Panda Studio is a live documentation for design tokens (colors, fonts, etc.).
+
+To run Panda studio execute
+```
+pnpm panda studio build
+```
+
+## Screenshots
+
+![Panda CSS Welcome screen](./public/images/panda-studio-welcome.png)
+![Panda CSS colors](./public/images/panda-studio-colors.png)
+![Panda CSS spacings](./public/images/panda-studio-spacings.png)
+
 ## References
 
 - [🐼 Panda CSS](https://panda-css.com/)
 - [ESLint plugin for 🐼 Panda CSS](https://github.com/chakra-ui/eslint-plugin-panda)
+- [Panda Studio](https://www.npmjs.com/package/@pandacss/studio)
