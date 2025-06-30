@@ -52,7 +52,8 @@ To get started with this PoC, follow these steps:
 Panda Studio is a live documentation for design tokens (colors, fonts, etc.).
 
 To run Panda studio execute
-```
+
+```bash
 pnpm panda studio build
 ```
 
@@ -61,6 +62,36 @@ pnpm panda studio build
 ![Panda CSS Welcome screen](./public/images/panda-studio-welcome.png)
 ![Panda CSS colors](./public/images/panda-studio-colors.png)
 ![Panda CSS spacings](./public/images/panda-studio-spacings.png)
+
+## 🐼 Panda analyze
+
+Analyze design token and recipe usage.
+
+To analyze codebase run
+
+```bash
+pnpm panda analyze
+```
+
+By default, it will analyze your project based on the include and exclude config options.
+
+```bash
+# analyze a specific file
+pnpm panda analyze src/components/Button.tsx
+
+# analyze a specific glob
+pnpm panda analyze "src/components/**"
+```
+
+### Example
+
+**Token usage report 🎨**
+
+| Token                | Usage %           | Most used                                     | Hardcoded | Found in |
+| -------------------- | ----------------- | --------------------------------------------- | --------- | -------- |
+| spacing (24 tokens)  | 20.83% (5 tokens) | sm, md, xxs, xs, lg                           | 0         | 2 files  |
+| colors (34 tokens)   | 20.59% (7 tokens) | primary, secondary, grey.800, white, grey.200 | 0         | 1 file   |
+| fontSizes (7 tokens) | 14.29% (1 token)  | md                                            | 0         | 1 file   |
 
 ## References
 
