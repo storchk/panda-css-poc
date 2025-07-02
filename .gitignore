@@ -3,3 +3,4 @@ node_modules
 styled-system
 styled-system-studio
 storybook-static
+.DS_Store
