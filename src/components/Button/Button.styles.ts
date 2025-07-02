@@ -1,6 +1,7 @@
+import { cva } from "../../../styled-system/css";
 import { styled } from "../../../styled-system/jsx";
 
-export const StyledButton = styled("button", {
+const button = cva({
   base: {
     borderWidth: "0.125rem",
     borderStyle: "solid",
@@ -64,3 +65,5 @@ export const StyledButton = styled("button", {
     },
   },
 });
+
+export const StyledButton = styled("button", button);

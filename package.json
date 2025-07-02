@@ -8,7 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint ./src",
     "storybook": "storybook dev -p 6006",
-    "build:panda": "pnpm panda",
+    "panda-dev": "panda --watch --lightningcss",
+    "build:panda": "NODE_ENV=production pnpm panda \"src/**/*.{js,jsx,ts,tsx}\"",
     "build-storybook": "pnpm build:panda && storybook build"
   },
   "repository": {

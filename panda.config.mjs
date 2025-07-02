@@ -16,8 +16,7 @@ export default defineConfig({
   presets: [preset],
 
   minify: isProduction,
-
-  // Define the theme variants
+  optimize: isProduction,
   themes: { blueTheme, redTheme },
 
   conditions: {
@@ -29,6 +28,9 @@ export default defineConfig({
 
   staticCss: {
     themes: ["redTheme", "blueTheme"],
+    recipes: {
+      button: ["*"],
+    },
   },
 
   globalCss: {
