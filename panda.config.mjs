@@ -13,6 +13,7 @@ export default defineConfig({
   strictPropertyValues: true,
   strictTokens: true,
   jsxFramework: "react",
+  shorthands: false,
   presets: [preset],
 
   minify: isProduction,

@@ -6,6 +6,7 @@ import { colors } from "./colors";
 import { spacing } from "./spacing";
 import { fontSizes } from "./font";
 import { breakpoints } from "./breakpoints";
+import { utilities } from "./utilities";
 
 /**
  * Defines the design system preset for the project
@@ -42,4 +43,5 @@ export const preset = definePreset({
     },
     breakpoints,
   },
+  utilities,
 });

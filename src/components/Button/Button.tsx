@@ -15,6 +15,7 @@ export const Button: FC<ButtonProps> = ({
       size={size}
       onClick={onClick}
       className={className}
+      margin={{ smScreen: "md", mdScreen: "lg" }}
     >
       {label}
     </StyledButton>
